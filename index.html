@@ -11,7 +11,6 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:#020617;color:#e2e8f0}
 
-/* NAV */
 nav{
 display:flex;justify-content:space-between;
 padding:15px 30px;background:#020617;
@@ -19,7 +18,6 @@ border-bottom:1px solid #1e293b
 }
 nav a{color:#38bdf8;text-decoration:none;margin:0 10px}
 
-/* HERO */
 header{
 height:100vh;display:flex;flex-direction:column;
 justify-content:center;align-items:center;text-align:center;
@@ -33,7 +31,7 @@ border:3px solid #38bdf8;
 margin-bottom:15px;
 }
 
-header h1{font-size:2.8rem}
+header h1{font-size:2.5rem}
 header span{color:#38bdf8}
 
 .btn{
@@ -42,7 +40,6 @@ background:#38bdf8;color:#020617;
 border-radius:6px;text-decoration:none;font-weight:bold
 }
 
-/* SECTIONS */
 section{padding:60px 20px;max-width:1100px;margin:auto}
 
 h2{
@@ -71,6 +68,12 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px
 }
 
+.stat{
+text-align:center;
+color:#38bdf8;
+font-size:2rem;
+}
+
 footer{
 text-align:center;
 padding:20px;
@@ -96,14 +99,14 @@ border-top:1px solid #1e293b
 <!-- HERO -->
 <header>
 
-<!-- ✅ YOUR IMAGE -->
-<img src="https://raw.githubusercontent.com/angelmariaflowerance/PORTFOLIO/main/1763125825080.jpg" alt="Profile">
+<!-- ✅ LOCAL IMAGE -->
+<img src="1763125825080.jpg" alt="Profile">
 
 <h1>Hi, I'm <span>Angel</span></h1>
-<p>IT Security Specialist | SOC Operations | VAPT | Threat Intelligence</p>
+<p>IT Security Specialist | SOC | VAPT | Threat Intelligence</p>
 
-<!-- ✅ YOUR RESUME -->
-<a href="https://raw.githubusercontent.com/angelmariaflowerance/PORTFOLIO/main/it%20sec%20resume.pdf" target="_blank" class="btn">
+<!-- ✅ LOCAL RESUME -->
+<a href="it sec resume.pdf" target="_blank" class="btn">
 Download Resume
 </a>
 
@@ -119,41 +122,62 @@ IT Security Specialist with hands-on experience in SOC monitoring, VAPT, SIEM (W
 </div>
 </section>
 
+<!-- DASHBOARD -->
+<section>
+<h2>Security Dashboard</h2>
+<div class="grid">
+
+<div class="card">
+<h3 class="stat">15+</h3>
+<p>Vulnerabilities Identified</p>
+</div>
+
+<div class="card">
+<h3 class="stat">3+</h3>
+<p>Security Projects</p>
+</div>
+
+<div class="card">
+<h3 class="stat">SIEM</h3>
+<p>Threat Monitoring</p>
+</div>
+
+<div class="card">
+<h3 class="stat">24/7</h3>
+<p>Security Focus</p>
+</div>
+
+</div>
+</section>
+
 <!-- EXPERIENCE -->
 <section id="experience">
 <h2>Professional Experience</h2>
 
 <div class="card">
 <h3>IT Security Specialist</h3>
-<p>Serah Travel & Tours LLC Pvt Ltd (ApeiroTrip), Pathanamthitta | Dec 2025 – Present | On-site</p>
+<p>Serah Travel & Tours (ApeiroTrip) | Dec 2025 – Present</p>
 <ul>
-<li>Managed access control, RBAC, and secure email configurations</li>
-<li>Handled backend administration and security monitoring for AI-powered B2C and B2B travel platforms</li>
-<li>Monitored system performance, booking flows, and transaction issues</li>
-<li>Oversaw payment gateway security and fraud detection</li>
-<li>Performed risk assessments for proactive threat mitigation</li>
+<li>Managed RBAC, IAM, and secure email configurations</li>
+<li>Backend administration & security monitoring (B2C/B2B platforms)</li>
+<li>Payment gateway security & fraud detection</li>
+<li>System monitoring, troubleshooting, and risk assessment</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Cybersecurity Analyst Intern – SOC Operations</h3>
-<p>CyArt | Aug 2025 – Nov 2025 | Remote</p>
+<h3>Cybersecurity Analyst Intern (SOC)</h3>
 <ul>
-<li>Monitored SIEM, IDS/IPS, and firewall logs for threat detection</li>
-<li>Performed incident response, alert triage, log correlation, and IOC analysis</li>
-<li>Conducted phishing and malware analysis using MITRE ATT&CK</li>
-<li>Used OSINT and threat intelligence for investigations</li>
-<li>Supported security audits and compliance</li>
+<li>SIEM monitoring, alert triage, IOC analysis</li>
+<li>Threat intelligence & malware analysis</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Cybersecurity Intern</h3>
-<p>Kerala Police Academy | Jan 2024 | On-site</p>
 <ul>
-<li>Performed VAPT and penetration testing using Kali Linux (15+ vulnerabilities)</li>
-<li>Used Nmap, Burp Suite, Metasploit, OWASP ZAP</li>
-<li>Analyzed traffic with Wireshark and provided remediation reports</li>
+<li>VAPT & penetration testing (15+ vulnerabilities)</li>
+<li>Tools: Nmap, Burp Suite, Wireshark</li>
 </ul>
 </div>
 
@@ -164,25 +188,10 @@ IT Security Specialist with hands-on experience in SOC monitoring, VAPT, SIEM (W
 <h2>Technical Skills</h2>
 <div class="grid">
 
-<div class="card">
-<h4>Security Operations</h4>
-<p>SIEM (Wazuh), Incident Response, Log Analysis, Threat Intelligence</p>
-</div>
-
-<div class="card">
-<h4>Application Security</h4>
-<p>VAPT, Web Security Testing, Payment Security, Fraud Detection</p>
-</div>
-
-<div class="card">
-<h4>Tools</h4>
-<p>Burp Suite, Nmap, Wireshark, Metasploit, OWASP ZAP</p>
-</div>
-
-<div class="card">
-<h4>Networking</h4>
-<p>TCP/IP, IDS/IPS, Firewalls, RBAC, IAM, TLS/SSL</p>
-</div>
+<div class="card">SIEM, Incident Response, Threat Intelligence</div>
+<div class="card">VAPT, Web Security, Payment Security</div>
+<div class="card">Burp Suite, Nmap, Wireshark, Metasploit</div>
+<div class="card">RBAC, IAM, TLS/SSL, IDS/IPS</div>
 
 </div>
 </section>
@@ -199,12 +208,12 @@ IT Security Specialist with hands-on experience in SOC monitoring, VAPT, SIEM (W
 
 <div class="card">
 <h4>Secure REST API</h4>
-<p>JWT authentication, input validation, rate limiting (OWASP)</p>
+<p>JWT authentication, rate limiting, input validation (OWASP)</p>
 </div>
 
 <div class="card">
 <h4>Penetration Testing</h4>
-<p>Identified vulnerabilities and delivered remediation strategies</p>
+<p>Identified vulnerabilities and provided remediation strategies</p>
 </div>
 
 </div>
